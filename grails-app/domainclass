@@ -1,0 +1,10 @@
+package project
+
+class Book {
+    long id
+    String bookTitle
+    static belongTo =[author:AUTHOR]
+    static constraints = {
+        bookTitle blank:false,unique:true
+    }
+}
